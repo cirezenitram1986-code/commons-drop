@@ -5,7 +5,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends unzip curl \
  && rm -rf /var/lib/apt/lists
 
-RUN curl -L -o /tmp/dyad.zip "https://github.com/cirezenitram1986-code/commons-drop/releases/download/V1.0.0/dyad-app-v1.1.1.zip" \
+RUN curl -L -o /tmp/dyad.zip "https://github.com/cirezenitram1986-code/commons-drop/releases/download/V1.0.0/dyad-app-v1.1.2.zip" \
  && unzip -q /tmp/dyad.zip -d /app && rm /tmp/dyad.zip \
  && pip install --no-cache-dir -r /app/dyad-app-v1/backend/requirements.txt
 
